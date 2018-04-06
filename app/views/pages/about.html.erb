@@ -1,36 +1,117 @@
-<h4>Prices</h4>
+<style>
+body {
+    font-family: "Raleway", sans-serif;
+}
 
-<p>All pitches include 2 people and 1 vehicle. Children aged 3 yrs and under are free.</p>
+.about-sidenav {
+    height: 100%;
+    width: 15vw;
+    position: fixed;
+    z-index: 1;
+    top: 70px;
+    left: 0;
+    background-color: #BFD6BC;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
 
-<p>There is a backpackers rate for anyone who walks/cycles to the site with a small 1-2 man tent, for information regarding this please call us.</p>
+.about-sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+}
 
-<p>We cannot accept commercial vehicles/vans.</p>
+.about-sidenav a:hover {
+    color: #f1f1f1;
+}
 
-<p>Large tents that require over 6 metres width or length need to be booked directly with the site manager on 01451 820285 or 07906 990434.</p>
+.about-sidenav a.active {
+    color: #f1f1f1;
+}
 
-<p>Please arrive between 1pm to 8pm, pitches should be vacated by 11.00am on the day of departure. If you need flexibility with your arrival or departure times contact us and we will do our best to help.</p>
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
 
-<p>There is a minimum booking of three nights for Bank Holidays and 2 nights for High Season weekends.</p>
+@media screen and (max-height: 450px) {
+    .about-sidenav {padding-top: 15px;}
+    .about-sidenav a {font-size: 18px;}
+}
+</style>
 
-<p>Any questions email cotswoldcamping@gmail.com or call 01451 820285 or 07906 990434. If nobody is available please leave a message and we will get back to you.</p>
 
 
-<h4>How to find us</h4>
+
+<div class="about-sidenav">
+  <a href="#news">news</a>
+  <a href="#prices">prices</a>
+  <a href="#find">how to find us</a>
+  <a href="#contact">contact info</a>
+</div>
 
 
-<p>We are 2.5 miles on the left of the A436 from Bourton-on-the-Water heading towards Cheltenham and approximately 8 miles on the right of the A436 from the A40/Andoversford junction heading towards Bourton-on-the-Water.</p>
 
-<h5>SATNAV USERS</h5>
-We share a postcode with nearby properties known as Upper Harford.  They have a message on their drive saying "NOT Folly Farm".  Our drive is on the other side of the road about 200 metres in the Cheltenham direction. Please look out for the Folly Farm Campsite sign and the avenue of Poplar trees down the drive.
 
-<h5> SAT NAV Co-ordinates; </h5>
 
-<p> N 51, 53', 6.7" </p>
- <p> W  1, 49', 24.2" </p>
 
-<h5>OS MAPS</h5>
+<div class="about-main">
 
-<p>Footpaths were formally diverted away from our neighbouring properties in September 2015.  Please make sure you are using up to date OS Maps or ask our managers for directions before setting off. </p>
 
-<p> Thank you. </p>
+  <div class="about-section" id="news">
+    <h4>news</h4>
+  <%= @news.content.html_safe %>
 
+  </div>
+
+  <div class="about-section" id="prices">
+        <h4>prices</h4>
+
+   <%= @prices.content.html_safe %>
+
+  </div>
+
+  <div class="about-section" id="find">
+      <h4>how to find us</h4>
+
+      <%= @findus.content.html_safe %>
+
+  </div>
+
+  <div class="about-section" id="contact">
+
+    <%= @contact.content.html_safe %>
+
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+
+
+  window.onscroll = function() {activateCat()};
+  console.log("scroll");
+
+  function activateCat() {
+
+    var position = $(this).scrollTop();
+    position = position + 50;
+
+    $('.about-section').each(function() {
+        var target = $(this).offset().top;
+        var id = $(this).attr('id');
+
+        if (position >= target) {
+            $('.about-sidenav a').removeClass('active');
+            $('.about-sidenav a[href=#' + id + ']').addClass('active');
+        }
+    });
+
+  }
+
+
+</script>
