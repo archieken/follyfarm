@@ -33,15 +33,15 @@ prices_content = " <p>All pitches include 2 people and 1 vehicle. Children aged 
 
 howto_content = "<p>We are 2.5 miles on the left of the A436 from Bourton-on-the-Water heading towards Cheltenham and approximately 8 miles on the right of the A436 from the A40/Andoversford junction heading towards Bourton-on-the-Water.</p>
 
-    <h5>SATNAV USERS</h5>
+    <h5><strong>SATNAV USERS</strong></h5>
     We share a postcode with nearby properties known as Upper Harford.  They have a message on their drive saying 'NOT Folly Farm'.  Our drive is on the other side of the road about 200 metres in the Cheltenham direction. Please look out for the Folly Farm Campsite sign and the avenue of Poplar trees down the drive.
 
-    <h5> SAT NAV Co-ordinates; </h5>
+    <h5><strong>SAT NAV Co-ordinates;</strong></h5>
 
     <p> N 51, 53', 6.7' </p>
      <p> W  1, 49', 24.2' </p>
 
-    <h5>OS MAPS</h5>
+    <h5><strong>OS MAPS</strong></h5>
 
     <p>Footpaths were formally diverted away from our neighbouring properties in September 2015.  Please make sure you are using up to date OS Maps or ask our managers for directions before setting off. </p>
 
