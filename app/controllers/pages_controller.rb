@@ -6,15 +6,19 @@ class PagesController < ApplicationController
   end
 
   def about
-  end
-
-  def news
+    @pagetitle = "About Us"
+    @news = News.first
+    @prices = Price.first
+    @findus = Findu.first
+    @contact = Contactinfo.first
   end
 
   def dofe
+    @pagetitle = "DofE"
   end
 
   def terms
+    @pagetitle = "Terms and Attractions"
   end
 
 end

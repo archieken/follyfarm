@@ -1,0 +1,2 @@
+class Findu < ApplicationRecord
+end
