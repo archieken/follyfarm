@@ -81,7 +81,11 @@ body {
 
   <div class="about-section" id="news">
     <h4>news</h4>
-  <%= @news.content.html_safe %>
+  <%= simple_form_for @news do |f| %>
+        <%= f.input :content, input_html: { class: 'ckeditor' } %>
+        <%= f.button :submit %>
+      <% end %>
+
 
   </div>
 
@@ -92,22 +96,29 @@ body {
         <div class="card-map" style="background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=51.887358,-1.819547&markers=color:purple%7C51.887358,-1.819547&zoom=12&size=2000x1500&key=AIzaSyCKxAu_Y-IhJUSTXAcMghvx_UDSBSGm2l8')";'>
       </div>
 
-      <%= @findus.content.html_safe %>
+      <%= simple_form_for @findus do |f| %>
+        <%= f.input :content, input_html: { class: 'ckeditor' } %>
+        <%= f.button :submit %>
+      <% end %>
 
   </div>
 
   <div class="about-section" id="contact">
 
-    <%= @contact.content.html_safe %>
+    <%= simple_form_for @contactinfo do |f| %>
+        <%= f.input :content, input_html: { class: 'ckeditor' } %>
+        <%= f.button :submit %>
+      <% end %>
 
   </div>
 
     <div class="about-section" id="prices">
         <h4>prices</h4>
 
-   <%= @prices.content.html_safe %>
-
-   <%= render "shared/prices" %>
+   <%= simple_form_for @price do |f| %>
+        <%= f.input :content, input_html: { class: 'ckeditor' } %>
+        <%= f.button :submit %>
+      <% end %>
 
   </div>
 
