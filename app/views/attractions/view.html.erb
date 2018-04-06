@@ -1,11 +1,11 @@
 <style>
 
-body {
+.container {
   background-color: #CEDBD1;
 }
 
   .attractions {
-    background-color: #E5E5E5;
+    background-color: #CEDBD1;
   }
 
 
@@ -25,7 +25,8 @@ body {
 .attraction-card-content {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .attraction-photo {
@@ -49,7 +50,7 @@ body {
   color: #524F4C;
 }
 
-.attraction-card-location {
+.attraction-card-link {
   margin: 0px;
   margin-top: 10px;
   font-family: Baskerville;
@@ -58,7 +59,7 @@ body {
   font-size: 15px;
   color: #524F4C;
   letter-spacing: 1px;
-  opacity: 0.3;
+  opacity: 0.8;
 }
 
 .attraction-card-para {
@@ -71,19 +72,19 @@ body {
 
 </style>
 
-<div class="attractions">
+<div class="attractions" style="background-color: #CEDBD1;">
 
   <div class="row">
 
     <% Attraction.all.each do |attraction| %>
-    <div class="col-lg-4">
+    <div class="col-lg-6">
         <div class="attraction-card">
-          <div class="attraction-card-content">
+          <div class="attraction-card-content" style="background-color: white;">
                <img class="attraction-photo" src=<%=cl_image_path('vwbeetle', cloud_name: 'di7okux3q')%> alt="Trolltunga Norway">
             <div class="attraction-info" style="display:inline">
               <h5 class="attraction-name"><%= attraction.subject %></h5>
-              <h6 class="attraction-card-location">london</h6>
               <p class="attraction-card-para"><%= attraction.content %></p>
+              <a href=<%=attraction.link%>> <h6 class="attraction-card-link">more details...</h6></a>
             </div>
           </div>
         </div>
