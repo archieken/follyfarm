@@ -67,12 +67,12 @@ Findu.create!(subject: "The 2018 Season", content: howto_content);
 
 Contactinfo.create!(subject: "The 2018 Season", content: contact_content);
 
-Attraction.create!(subject: "The Cotswold Way", content: "The Cotswold Way offers just over 100 miles of magical walking");
-Attraction.create!(subject: "Daylesford Organic Farm", content: "Daylesford is all about organic, seasonal and delicious food. Visit our unique farm in the Cotswolds, our London farmshops & cafés or order online today.");
-Attraction.create!(subject: "Naunton Downs Golf Club", content: "Local courses at Naunton (1 mile), Andoversford (7 miles) and The Wychwood Golf Club (14 miles)");
-Attraction.create!(subject: "The Plough Inn", content: "a fifteen minute walk across fields from the campsite. It is an award winning pub which serves delicious locally sourced food and ales. To be sure of availability we recommend booking.");
-Attraction.create!(subject: "Farmers Markets", content: "Held regularly at Stow-on-the-Wold and Cirencester");
-Attraction.create!(subject: "Chedworth Roman Villa", content: "Chedworth,  is worth a visit not just to see the remarkable remains of one of Britains largest Roman Villas and it's mosiacs but also to visit it's farm shop");
+Attraction.create!(subject: "The Cotswold Way", content: "The Cotswold Way offers just over 100 miles of magical walking", link: "http://www.volkswagen.co.uk/new/beetle-pa");
+Attraction.create!(subject: "Daylesford Organic Farm", content: "Daylesford is all about organic, seasonal and delicious food. Visit our unique farm in the Cotswolds.", link: "http://www.volkswagen.co.uk/new/beetle-pa");
+Attraction.create!(subject: "Naunton Downs Golf Club", content: "Local courses at Naunton (1 mile), Andoversford (7 miles) and The Wychwood Golf Club (14 miles)", link: "http://www.volkswagen.co.uk/new/beetle-pa");
+Attraction.create!(subject: "The Plough Inn", content: "A fifteen minute walk across fields from the campsite. It is an award winning pub which serves delicious locally sourced food and ales.", link: "http://www.volkswagen.co.uk/new/beetle-pa");
+Attraction.create!(subject: "Farmers Markets", content: "Held regularly at Stow-on-the-Wold and Cirencester", link: "http://www.volkswagen.co.uk/new/beetle-pa");
+Attraction.create!(subject: "Chedworth Roman Villa", content: "Chedworth,  is worth a visit not just to see the remarkable remains of one of Britains largest Roman Villas.", link: "http://www.volkswagen.co.uk/new/beetle-pa");
 
 
 10.times {Image.create!(source: "http://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg", description:"Our trendy campers enjoying the sun!")}
