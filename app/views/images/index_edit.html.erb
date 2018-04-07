@@ -1,0 +1,84 @@
+<style>
+
+.container {
+  background-color: #CEDBD1;
+}
+
+
+div.gallery {
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+
+
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href= <%=cl_image_path('vwbeetle', cloud_name: 'di7okux3q')%>>
+          <img src=<%=cl_image_path('vwbeetle', cloud_name: 'di7okux3q')%> alt="Trolltunga Norway" width="300" height="200">
+        </a>
+        <div class="desc"><%= link_to "Upload new photo", new_image_path %></div>
+      </div>
+    </div>
+
+
+
+<% Image.all.each do |image| %>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href= <%=cl_image_path('vwbeetle', cloud_name: 'di7okux3q')%>>
+          <img src=<%=cl_image_path('vwbeetle', cloud_name: 'di7okux3q')%> alt="Trolltunga Norway" width="300" height="200">
+        </a>
+        <div class="desc"><%= image.description%>
+        <%= link_to "Delete", image_path(image), method: :delete %>
+        </div>
+      </div>
+    </div>
+
+<% end %>

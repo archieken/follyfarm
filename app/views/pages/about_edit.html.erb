@@ -82,7 +82,7 @@ body {
   <div class="about-section" id="news">
     <h4>news</h4>
   <%= simple_form_for @news do |f| %>
-        <%= f.input :content, input_html: { class: 'ckeditor' } %>
+        <%= f.input :content, label: false, input_html: { class: 'ckeditor' } %>
         <%= f.button :submit %>
       <% end %>
 
@@ -97,7 +97,7 @@ body {
       </div>
 
       <%= simple_form_for @findus do |f| %>
-        <%= f.input :content, input_html: { class: 'ckeditor' } %>
+        <%= f.input :content, label: false, input_html: { class: 'ckeditor' } %>
         <%= f.button :submit %>
       <% end %>
 
@@ -106,7 +106,7 @@ body {
   <div class="about-section" id="contact">
 
     <%= simple_form_for @contactinfo do |f| %>
-        <%= f.input :content, input_html: { class: 'ckeditor' } %>
+        <%= f.input :content, label: false, input_html: { class: 'ckeditor' } %>
         <%= f.button :submit %>
       <% end %>
 
@@ -116,7 +116,7 @@ body {
         <h4>prices</h4>
 
    <%= simple_form_for @price do |f| %>
-        <%= f.input :content, input_html: { class: 'ckeditor' } %>
+        <%= f.input :content, label: false, input_html: { class: 'ckeditor' } %>
         <%= f.button :submit %>
       <% end %>
 

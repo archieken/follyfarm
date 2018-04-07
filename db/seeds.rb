@@ -6,6 +6,7 @@ Findu.destroy_all
 Contactinfo.destroy_all
 Attraction.destroy_all
 Image.destroy_all
+User.destroy_all
 
 
 
@@ -76,5 +77,12 @@ Attraction.create!(subject: "Chedworth Roman Villa", content: "Chedworth,  is wo
 
 
 10.times {Image.create!(source: "http://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg", description:"Our trendy campers enjoying the sun!")}
+
+
+
+
+User.create!(email: "cotswoldcamping@gmail.com", password: "1234567")
+
+
 
 puts "ended"

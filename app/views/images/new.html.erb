@@ -1,0 +1,11 @@
+  <%= simple_form_for @image do |f| %>
+        <%= f.input :source%>
+        <%= f.input :description%>
+        <%= f.button :submit %>
+      <% end %>
+
+
+<!--
+        create_table "images", force: :cascade do |t|
+    t.string "source"
+    t.text "description" -->
