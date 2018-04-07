@@ -16,7 +16,11 @@ class AttractionsController < ApplicationController
 
   def update
     @attraction = Attraction.find(params[:id])
-    @attraction.update!(attraction_params)
+      if @attraction.update(attraction_params)
+             redirect_to root_path
+      else
+          redirect_to root_path
+      end
   end
 
   def new
@@ -25,7 +29,11 @@ class AttractionsController < ApplicationController
 
   def create
     @attraction = Attraction.new
-    @attraction.create!(attraction_params)
+      if @attraction.create(attraction_params)
+             redirect_to root_path
+      else
+          redirect_to root_path
+      end
   end
 
   def destroy

@@ -10,45 +10,19 @@
   </head>
   <body>
     <%= render 'shared/navbar' %>
-    <%= render 'shared/flashes' %>
-    <% if @home || @pagetitle == "About Us"%>
-    <% else %>
-      <%= render 'shared/banner' %>
-    <% end %>
-
-
-    <style>
-
-      body {
-
-        background-color: #CEDBD1;
-      }
-
-      .container {
-        background-color: white;
-      }
-    </style>
+    <%# render 'shared/flashes' %>
 
     <% if @pagetitle == "About Us" %>
 
-    <%= render 'shared/home-banner' %>
-     <%= yield %>
-
-
-    <% elsif @home %>
-
-  <div class="home-banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= cl_image_path "cornfield.jpg", cloud_name: "di7okux3q"%>);">
-    <div class="home-banner-content">
-         <div class="container">
-            <%= yield %>
-          </div>
-    </div>
-  </div>
+      <%= render 'shared/home-banner' %>
+      <%= yield %>
 
     <% else %>
-          <div class="container">
-            <%= yield %>
-          </div>
+
+        <%= render 'shared/banner' %>
+        <div class="container">
+          <%= yield %>
+        </div>
 
     <% end %>
 

@@ -2,7 +2,11 @@ class ContactsController < ApplicationController
 
    def update
     @contact = Contactinfo.last
-    @contact.update(contact_params)
+      if @contact.update(contact_params)
+             redirect_to root_path
+      else
+          redirect_to root_path
+      end
   end
 
 
