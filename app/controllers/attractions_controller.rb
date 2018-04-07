@@ -1,5 +1,5 @@
 class AttractionsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:view, :new, :create, :edit, :update]
+  skip_before_action :authenticate_user!, only: [:index, :new, :create, :edit, :update]
 
   def index
     @pagetitle = "Attractions"
