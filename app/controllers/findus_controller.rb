@@ -4,7 +4,11 @@ class FindusController < ApplicationController
      def update
     @findus = Findu.last
 
-    @findus.update(findus_params)
+      if @findus.update(findus_params)
+          redirect_to root_path
+      else
+          redirect_to root_path
+      end
 
     end
 

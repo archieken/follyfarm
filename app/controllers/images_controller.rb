@@ -15,7 +15,11 @@ class ImagesController < ApplicationController
 
   def create
     @image = Image.new(photos_params)
-    @image.save!
+      if @image.save!
+             redirect_to root_path
+      else
+          redirect_to root_path
+      end
   end
 
   def destroy
