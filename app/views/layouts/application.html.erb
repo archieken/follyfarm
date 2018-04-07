@@ -11,8 +11,7 @@
   <body>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
-    <% if @home %>
-      <%= render 'shared/home-banner' %>
+    <% if @home || @pagetitle == "About Us"%>
     <% else %>
       <%= render 'shared/banner' %>
     <% end %>
@@ -32,6 +31,7 @@
 
     <% if @pagetitle == "About Us" %>
 
+    <%= render 'shared/home-banner' %>
      <%= yield %>
 
 
@@ -52,7 +52,7 @@
 
     <% end %>
 
-    <%=render 'shared/footer' %>
+    <%# render 'shared/footer' %>
 
        <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="2bb8b4dd-3a12-4502-aa50-7cba51fd766a";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
