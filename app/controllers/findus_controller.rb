@@ -11,6 +11,6 @@ class FindusController < ApplicationController
         private
 
    def findus_params
-     params.require(:findu).permit(:contents)
+     params.require(:findu).permit(:content)
    end
 end

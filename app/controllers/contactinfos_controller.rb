@@ -9,7 +9,7 @@ class ContactsController < ApplicationController
     private
 
    def contact_params
-     params.require(:contactinfo).permit(:contents)
+     params.require(:contactinfo).permit(:content)
    end
 
 
