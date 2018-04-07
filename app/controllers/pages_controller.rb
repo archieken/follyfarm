@@ -14,7 +14,6 @@ class PagesController < ApplicationController
   end
 
   def dofe
-    @pagetitle = "D of E"
   end
 
   def terms
