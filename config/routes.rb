@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get '/edit', to: 'pages#about_edit', as: 'about_edit'
   get '/about', to: 'pages#about', as: 'about'
   get '/dofe', to: 'pages#dofe', as: 'dofe'
-  get '/attractions/index_edit', to: 'attractions#index_edit', as: 'index_edit'
+  get '/attractions/edit', to: 'attractions#index_edit', as: 'index_edit'
   get '/terms', to: 'pages#terms', as: 'terms'
 
 

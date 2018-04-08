@@ -7,11 +7,15 @@
 
   </div> -->
 
+  <!-- for the anchor -->
+  <div class="about-section" id="home">
+  </div>
 
 <div class="about-all">
 
 <div class="about-sidenav">
-  <!-- <a href="#home">home</a> -->
+  <a href="#home">find out more</a>
+  <hr style="width: 90%; border-color: black;opacity: 0.4;margin-top: 0px;margin-bottom: 5px;">
   <a href="#news">news</a>
   <a href="#find">how to find us</a>
   <a href="#contact">contact info</a>
@@ -91,8 +95,6 @@
   // Get the navbar
   var navbar = document.querySelector(".about-sidenav");
 
-  var main = document.querySelector(".about-main");
-
   // Get the offset position of the navbar
   var sticky = navbar.offsetTop;
 
@@ -105,10 +107,8 @@
 
     if (window.pageYOffset >= sticky) {
       navbar.classList.add("sticky")
-      main.classList.add("main-sticky")
     } else {
       navbar.classList.remove("sticky");
-      main.classList.remove("main-sticky")
     }
   }
 

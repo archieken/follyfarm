@@ -17,7 +17,6 @@ class PagesController < ApplicationController
   end
 
   def terms
-    @pagetitle = "Terms and Conditions"
   end
 
 
