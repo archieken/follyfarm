@@ -21,10 +21,11 @@
 .about-sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.4em;
     color: black;
     display: block;
     font-weight: bold;
+    opacity: 0.8;
 }
 
 .about-sidenav a:hover {
@@ -33,18 +34,19 @@
 
 .about-sidenav a.active {
     color: #f1f1f1;
+    opacity: 1;
 }
 
 .about-main {
     margin-left: 15vw;/* Same as the width of the sidenav */
-    font-size: 24px; /* Increased text to enable scrolling */
+    font-size: 1em; /* Increased text to enable scrolling */
     padding: 20px;
     padding-top-top: 20px;
     background-color: white;
 }
 
 .about-main h4 {
-    font-size: 28px; /* Increased text to enable scrolling */
+    font-size: 1.4em; /* Increased text to enable scrolling */
     font-weight: bold;
 }
 
@@ -66,6 +68,7 @@
 
 {
 .about-sidenav { display: none; }
+.about-main { margin-left: 0px;}
 }
 
 
