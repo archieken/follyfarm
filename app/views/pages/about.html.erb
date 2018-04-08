@@ -1,24 +1,22 @@
-   <div class="page-scroll text-center" style="position: relative;
+<!--    <div class="page-scroll text-center" style="position: relative;
   bottom:40px;">
     <a href="#top">
       <a href="javascript: document.body.scrollIntoView(false);" class="btn btn-circle"><i class="fa fa-angle-down fa-2x animated"></i>
     </a>
     </a>
 
-  </div>
+  </div> -->
 
 
-<div class="about-section">
+<div class="about-all">
 
 <div class="about-sidenav">
-  <a href="#home">home</a>
+  <!-- <a href="#home">home</a> -->
   <a href="#news">news</a>
   <a href="#find">how to find us</a>
   <a href="#contact">contact info</a>
   <a href="#prices">prices</a>
 </div>
-
-
 
 
 <div class="about-main">
@@ -93,6 +91,8 @@
   // Get the navbar
   var navbar = document.querySelector(".about-sidenav");
 
+  var main = document.querySelector(".about-main");
+
   // Get the offset position of the navbar
   var sticky = navbar.offsetTop;
 
@@ -105,8 +105,10 @@
 
     if (window.pageYOffset >= sticky) {
       navbar.classList.add("sticky")
+      main.classList.add("main-sticky")
     } else {
       navbar.classList.remove("sticky");
+      main.classList.remove("main-sticky")
     }
   }
 
