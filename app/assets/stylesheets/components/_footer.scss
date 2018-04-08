@@ -1,12 +1,4 @@
-.footer {
-  background: #F4F4F4;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 60px;
-  padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
-}
+
 .footer-links {
   display: flex;
   align-items: center;
@@ -15,19 +7,19 @@
   color: white;
   opacity: 0.95;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 1.1em;
   padding: 0px 10px;
 }
 .footer-links a:hover {
   opacity: 1;
 }
 
+
 .site-footer {
     background-color: #4e5251;
     color: white;
-    padding: 25px;
-    font-size: 18px;
-    font-size: 1.8rem;
+    padding: 15px;
+    font-size: 1em;
 
     position: absolute;
     width: 100%;
@@ -38,7 +30,6 @@
 
 .footer-info hr {
   padding: 0px;
-  margin: 0px;
   margin: 10px;
   opacity: 0.5;
 }
