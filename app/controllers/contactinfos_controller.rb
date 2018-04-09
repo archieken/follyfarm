@@ -1,4 +1,4 @@
-class ContactsController < ApplicationController
+class ContactinfosController < ApplicationController
 
    def update
     @contact = Contactinfo.last

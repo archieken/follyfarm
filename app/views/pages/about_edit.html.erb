@@ -22,6 +22,17 @@
 <div class="about-main">
 
 
+    <div class="about-section" id="about">
+    <h4>about</h4>
+  <%= simple_form_for @abouts do |f| %>
+        <%= f.input :content, label: false, input_html: { class: 'ckeditor' } %>
+        <%= f.button :submit, remote: true %>
+      <% end %>
+
+
+  </div>
+
+
   <div class="about-section" id="news">
     <h4>news</h4>
   <%= simple_form_for @news do |f| %>
@@ -46,22 +57,22 @@
 
   </div>
 
-  <div class="about-section" id="contact">
-      <h4>contact info</h4>
-
-    <%= simple_form_for @contactinfo do |f| %>
-        <%= f.input :content, label: false, input_html: { class: 'ckeditor' } %>
-        <%= f.button :submit, "Update Contact Info", remote: true %>
-      <% end %>
-
-  </div>
-
     <div class="about-section" id="prices">
         <h4>prices</h4>
 
    <%= simple_form_for @price do |f| %>
         <%= f.input :content, label: false, input_html: { class: 'ckeditor' } %>
         <%= f.button :submit %>
+      <% end %>
+
+  </div>
+
+    <div class="about-section" id="contact">
+      <h4>contact info</h4>
+
+    <%= simple_form_for @contactinfo do |f| %>
+        <%= f.input :content, label: false, input_html: { class: 'ckeditor' } %>
+        <%= f.button :submit, "Update Contact Info"%>
       <% end %>
 
   </div>
