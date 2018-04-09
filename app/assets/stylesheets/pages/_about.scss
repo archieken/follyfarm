@@ -2,6 +2,7 @@
 .about-all
 {
  display:flex;
+ box-shadow: 0px 2px 10px rgba(0,0,0,1);
 }
 .about-sidenav {
     height: 100vh;
@@ -53,7 +54,6 @@
     margin-left: 15vw;/* Same as the width of the sidenav */
     font-size: 1em; /* Increased text to enable scrolling */
     padding: 20px;
-    padding-top-top: 20px;
     background-color: white;
 }
 
