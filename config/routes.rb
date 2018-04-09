@@ -7,12 +7,14 @@ Rails.application.routes.draw do
   resources :contactinfos, only: [:update]
   resources :findus, only: [:update]
   resources :prices, only: [:update]
+  resources :terms, only: [:update]
+  resources :abouts, only: [:update]
 
   resources :attractions, only: [ :index, :new, :create, :edit, :update, :destroy]
 
 
   get '/edit', to: 'pages#about_edit', as: 'about_edit'
-  get '/about', to: 'pages#about', as: 'about'
+  get '/home', to: 'pages#about', as: 'home'
   get '/dofe', to: 'pages#dofe', as: 'dofe'
   get '/attractions/edit', to: 'attractions#index_edit', as: 'index_edit'
   get '/terms', to: 'pages#terms', as: 'terms'

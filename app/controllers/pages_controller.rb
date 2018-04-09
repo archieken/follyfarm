@@ -7,6 +7,7 @@ class PagesController < ApplicationController
 
   def about
     @pagetitle = "About Us"
+    @abouts = About.last
     @news = News.last
     @prices = Price.last
     @findus = Findu.last
@@ -17,11 +18,15 @@ class PagesController < ApplicationController
   end
 
   def terms
+    @terms = Term.last
   end
 
 
 
   def about_edit
+
+    @abouts = About.last
+
     @news = News.last
 
     @findus = Findu.last
