@@ -19,7 +19,7 @@
     <div class="col-lg-6">
         <div class="attraction-card">
           <div class="attraction-card-content" style="background-color: white;">
-               <img class="attraction-photo" src=<%=cl_image_path('vwbeetle', cloud_name: 'di7okux3q')%> alt="Trolltunga Norway">
+               <img class="attraction-photo" src=<%=cl_image_path(attraction.image, cloud_name: 'di7okux3q')%> alt="Trolltunga Norway">
             <div class="attraction-info" style="display:inline">
               <h5 class="attraction-name"><%= attraction.subject %></h5>
               <p class="attraction-card-para"><%= attraction.content %></p>
