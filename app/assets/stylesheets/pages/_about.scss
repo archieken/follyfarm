@@ -15,6 +15,9 @@
    // top: 92vh;
     margin-top: -45px;
     position: absolute;
+
+
+    border-top-right-radius: 15px !important;
 }
 
 
@@ -22,6 +25,7 @@
     position: fixed;
     top: 71px !important;
     width: 15vw;
+    border-top-right-radius: 0px !important;
 }
 
 // .main-sticky
@@ -37,7 +41,7 @@
     font-size: 1.4em;
     color: black;
     font-weight: bold;
-    opacity: 0.8;
+    opacity: 0.5;
     display:block;
 }
 
