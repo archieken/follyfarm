@@ -28,8 +28,8 @@ class AttractionsController < ApplicationController
   end
 
   def create
-    @attraction = Attraction.new
-      if @attraction.create(attraction_params)
+    @attraction = Attraction.new(attraction_params)
+      if @attraction.save!
              redirect_to root_path
       else
           redirect_to root_path
@@ -44,7 +44,7 @@ class AttractionsController < ApplicationController
   private
 
   def attraction_params
-     params.require(:attraction).permit(:content)
+     params.require(:attraction).permit(:content, :subject, :image, :link)
   end
 
 end

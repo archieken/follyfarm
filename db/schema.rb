@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20180409224641) do
     t.string "subject"
     t.text "content"
     t.string "link"
-    t.string "image"
+    t.string "image", default: "http://res.cloudinary.com/di7okux3q/image/upload/v1522773619/vwbeetle.jpg"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 20180409224641) do
   end
 
   create_table "images", force: :cascade do |t|
-    t.string "source"
+    t.string "source", default: "http://res.cloudinary.com/di7okux3q/image/upload/v1522773619/vwbeetle.jpg"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
