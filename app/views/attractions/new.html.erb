@@ -1,5 +1,6 @@
   <%= simple_form_for @attraction do |f| %>
         <%= f.input :image, label: false%>
+        <%= f.input :image_cache, as: :hidden %>
         <%= f.input :subject%>
         <%= f.input :content%>
         <%= f.input :link%>
