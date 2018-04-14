@@ -24,7 +24,7 @@
 
     <div class="about-section" id="about">
     <h4>about</h4>
-  <%= simple_form_for @abouts do |f| %>
+  <%= simple_form_for @about do |f| %>
         <%= f.input :content, label: false, input_html: { class: 'ckeditor' } %>
         <%= f.button :submit, remote: true %>
       <% end %>

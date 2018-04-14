@@ -3,7 +3,7 @@ class AboutsController < ApplicationController
 
     def update
 
-    @price = About.last
+    @about = About.last
 
       if @about.update(about_params)
              redirect_to root_path
