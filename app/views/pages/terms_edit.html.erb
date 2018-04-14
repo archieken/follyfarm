@@ -1,0 +1,6 @@
+<h3>Terms and Conditions</h3>
+
+<%= simple_form_for @terms do |f| %>
+        <%= f.input :content, label: false, input_html: { class: 'ckeditor' } %>
+        <%= f.button :submit, "Update Terms"%>
+      <% end %>

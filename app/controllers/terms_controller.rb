@@ -3,7 +3,7 @@ class TermsController < ApplicationController
 
     def update
 
-    @price = Term.last
+    @term = Term.last
 
       if @term.update(term_params)
              redirect_to root_path

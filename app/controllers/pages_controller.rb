@@ -38,4 +38,11 @@ class PagesController < ApplicationController
 
   end
 
+
+    def terms_edit
+
+    @terms = Term.last
+
+  end
+
 end

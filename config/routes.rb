@@ -23,6 +23,6 @@ Rails.application.routes.draw do
   get '/images/edit', to: 'images#index_edit', as: 'images_index_edit'
   resources :images, only: [:index, :new, :create, :destroy]
 
-
+  get '/terms/edit', to: 'pages#terms_edit', as: 'terms_edit'
 
 end
