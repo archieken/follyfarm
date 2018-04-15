@@ -28,7 +28,136 @@
    opacity: 0;
   }
 
+
+ /* .gmnoprint {
+    height: 100px !important;
+    overflow: hidden;
+  }*/
+
   </style>
+
+
+
+
+
+
+
+
+<script>
+
+
+  function initialise() {
+  var mapCanvas = document.getElementById('map-canvas');
+
+  // Center
+  var center = new google.maps.LatLng(-27.46834, 153.02365);
+
+  // Map Options
+  var mapOptions = {
+    zoom: 16,
+    center: center,
+    scrollwheel: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    styles: [
+      {stylers: [{ visibility: 'simplified' }]},
+      {elementType: 'labels', stylers: [{ visibility: 'off' }]}
+    ]
+  };
+
+  // Create the Map
+  map = new google.maps.Map(mapCanvas, mapOptions);
+
+  var marker1 = new Marker({
+    map: map,
+    position: new google.maps.LatLng(-27.46577, 153.02303),
+    icon: {
+      path: SQUARE_PIN,
+      fillColor: '#00CCBB',
+      fillOpacity: 1,
+      strokeColor: '',
+      strokeWeight: 0
+    },
+    map_icon_label: '<span class="map-icon map-icon-point-of-interest"></span>'
+  });
+
+  var marker2 = new Marker({
+    map: map,
+    position: new google.maps.LatLng(-27.46617, 153.01865),
+    icon: {
+      path: ROUTE,
+      fillColor: '#1998F7',
+      fillOpacity: 1,
+      strokeColor: '',
+      strokeWeight: 0
+    },
+    map_icon_label: '<span class="map-icon map-icon-transit-station"></span>'
+  });
+
+  var marker3 = new Marker({
+    map: map,
+    position: new google.maps.LatLng(-27.46870, 153.02335),
+    icon: {
+      path: MAP_PIN,
+      fillColor: '#6331AE',
+      fillOpacity: 1,
+      strokeColor: '',
+      strokeWeight: 0
+    },
+    map_icon_label: '<span class="map-icon map-icon-city-hall"></span>'
+  });
+
+  var marker4 = new Marker({
+    map: map,
+    position: new google.maps.LatLng(-27.46900, 153.02009),
+    icon: {
+      path: SQUARE_ROUNDED,
+      fillColor: '#6331AE',
+      fillOpacity: 1,
+      strokeColor: '',
+      strokeWeight: 0
+    },
+    map_icon_label: '<span class="map-icon map-icon-courthouse"></span>'
+  });
+
+  var marker5 = new Marker({
+    map: map,
+    position: new google.maps.LatLng(-27.46904, 153.02754),
+    icon: {
+      path: SQUARE,
+      fillColor: '#00CCBB',
+      fillOpacity: 1,
+      strokeColor: '',
+      strokeWeight: 0
+    },
+    map_icon_label: '<span class="map-icon map-icon-grocery-or-supermarket"></span>'
+  });
+
+  var marker6 = new Marker({
+    map: map,
+    position: new google.maps.LatLng(-27.47167, 153.02580),
+    icon: {
+      path: SHIELD,
+      fillColor: '#6331AE',
+      fillOpacity: 1,
+      strokeColor: '',
+      strokeWeight: 0
+    },
+    map_icon_label: '<span class="map-icon map-icon-police"></span>'
+  });
+};
+
+google.maps.event.addDomListener(window, 'load', initialise);
+
+
+</script>
+
+
+
+
+
+
+
+
 
   <div class="about-section" id="home">
   </div>
@@ -42,14 +171,14 @@
       </div>
       <a href="#about">about us</a>
       <a href="#news">news</a>
-      <a href="#find">how to find us</a>
       <a href="#prices">prices</a>
       <a href="#contact">contact info</a>
+      <a href="#find">how to find us</a>
     </div>
 
     <div class="about-main">
       <div class="about-section" id="about">
-       <div class="card-map" style="background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0) ), url('<%=cl_image_path('vwbeetle', cloud_name: 'di7okux3q')%>')";'>
+       <div class="card-map" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45) ), url('<%=cl_image_path('vwbeetle', cloud_name: 'di7okux3q')%>')";'>
       <h2>about us</h2>
        </div>
        <%= @about.content.html_safe %>
@@ -59,21 +188,15 @@
 
 
       <div class="about-section" id="news">
-        <div class="card-map" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url('<%=cl_image_path('airstream', cloud_name: 'di7okux3q')%>');">
+        <div class="card-map" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45) ), url('<%=cl_image_path('IMG_0833.jpg', cloud_name: 'di7okux3q')%>');">
       <h2>news</h2>
        </div>
       <%= @news.content.html_safe %>
     </div>
 
-    <div class="about-section" id="find">
-      <div class="card-map" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 50%), url('https://maps.googleapis.com/maps/api/staticmap?center=51.887358,-1.819547&markers=color:purple%7C51.887358,-1.819547&zoom=12&size=2000x1500&key=AIzaSyCKxAu_Y-IhJUSTXAcMghvx_UDSBSGm2l8')";'>
-      <h2>how to find us</h2>
-     </div>
-      <%= @findus.content.html_safe %>
-    </div>
 
      <div class="about-section" id="prices">
-       <div class="card-map" style="background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0) ), url('<%=cl_image_path('rally-combine', cloud_name: 'di7okux3q')%>')";'>
+       <div class="card-map" style="background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0) ), url('<%=cl_image_path('IMG_0831.jpg', cloud_name: 'di7okux3q')%>')";'>
       <h2>prices</h2>
        </div>
       <%= @prices.content.html_safe %>
@@ -88,7 +211,19 @@
       <%= @contact.content.html_safe %>
     </div>
 
+
+       <div class="about-section" id="find">
+      <div class="card-map" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 50%), url('https://maps.googleapis.com/maps/api/staticmap?center=51.887358,-1.819547&markers=color:purple%7C51.887358,-1.819547&zoom=12&size=2000x1500&key=AIzaSyCKxAu_Y-IhJUSTXAcMghvx_UDSBSGm2l8')";'>
+      <h2>how to find us</h2>
+     </div>
+      <%= @findus.content.html_safe %>
+    </div>
+
     <div style="padding-top: 50px;"></div>
+
+    <div id="map" style='width: 100%; height: calc(100vh - 70px);' data-markers="<%= @marker.to_json %>">
+</div>
+
     </div>
 
   </div>
