@@ -180,3 +180,15 @@ User.create!(email: "cotswoldcamping@gmail.com", password: "1234567")
 
 
 puts "ended"
+
+
+
+# Image.create!(source: "http://res.cloudinary.com/di7okux3q/image/upload/v1523741481/IMG_0833.jpg", description:"Our trendy campers enjoying the sun!")
+# Image.create!(source: "http://res.cloudinary.com/di7okux3q/image/upload/v1523741462/IMG_0817.jpg", description:"Our trendy campers enjoying the sun!")
+# Image.create!(source: "http://res.cloudinary.com/di7okux3q/image/upload/v1523741464/IMG_0818.jpg", description:"Our trendy campers enjoying the sun!")
+# Image.create!(source: "http://res.cloudinary.com/di7okux3q/image/upload/v1523741461/IMG_0814.jpg", description:"Our trendy campers enjoying the sun!")
+# Image.create!(source: "http://res.cloudinary.com/di7okux3q/image/upload/v1523741466/IMG_0821.jpg", description:"Our trendy campers enjoying the sun!")
+# Image.create!(source: "http://res.cloudinary.com/di7okux3q/image/upload/v1523741465/IMG_0819.jpg", description:"Our trendy campers enjoying the sun!")
+# Image.create!(source: "http://res.cloudinary.com/di7okux3q/image/upload/v1523741479/IMG_0831.jpg", description:"Our trendy campers enjoying the sun!")
+
+# puts "seeds made"
