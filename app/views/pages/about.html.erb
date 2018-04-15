@@ -59,14 +59,14 @@
 
 
       <div class="about-section" id="news">
-        <div class="card-map" style="background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0) ), url('<%=cl_image_path('airstream', cloud_name: 'di7okux3q')%>');">
+        <div class="card-map" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url('<%=cl_image_path('airstream', cloud_name: 'di7okux3q')%>');">
       <h2>news</h2>
        </div>
       <%= @news.content.html_safe %>
     </div>
 
     <div class="about-section" id="find">
-      <div class="card-map" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://maps.googleapis.com/maps/api/staticmap?center=51.887358,-1.819547&markers=color:purple%7C51.887358,-1.819547&zoom=12&size=2000x1500&key=AIzaSyCKxAu_Y-IhJUSTXAcMghvx_UDSBSGm2l8')";'>
+      <div class="card-map" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 50%), url('https://maps.googleapis.com/maps/api/staticmap?center=51.887358,-1.819547&markers=color:purple%7C51.887358,-1.819547&zoom=12&size=2000x1500&key=AIzaSyCKxAu_Y-IhJUSTXAcMghvx_UDSBSGm2l8')";'>
       <h2>how to find us</h2>
      </div>
       <%= @findus.content.html_safe %>
