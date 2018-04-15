@@ -12,6 +12,10 @@ class PagesController < ApplicationController
     @prices = Price.last
     @findus = Findu.last
     @contact = Contactinfo.last
+
+
+    @marker = create_markers()
+
   end
 
   def dofe
@@ -44,5 +48,21 @@ class PagesController < ApplicationController
     @terms = Term.last
 
   end
+
+  private
+
+    def create_markers()
+
+     markers = []
+     markers << {
+        # icon: {url: "http://res.cloudinary.com/di7okux3q/image/upload/v1523814159/campground.svg"},
+
+
+        lat: 51.8844963,
+        lng: -1.8227667,
+        # infoWindow: { content: render_to_string(partial: "/shared/marker_details") }
+      }
+      markers
+    end
 
 end
