@@ -52,38 +52,27 @@ class AttractionsController < ApplicationController
 
     def create_markers()
 
-     markers = []
-     markers << {
-        icon: {url: "http://res.cloudinary.com/di7okux3q/image/upload/v1523814159/campground.svg"},
-        lat: 51.8844963,
-        lng: -1.8227667,
-        # infoWindow: { content: render_to_string(partial: "/shared/marker_details") }
-      }
-      markers
+      markers = []
 
-      list_attractions = []
       list_attractions = Attraction.where.not(latitude: nil, longitude: nil)
 
-      list_attractions.map do |attraction|
-
-        original_attraction = attraction
-
-        {
-        lat: attraction.latitude,
-        lng: attraction.longitude,
-        infoWindow: { content: render_to_string(partial: "shared/attraction_card", locals: { attraction: original_attraction }) }
-        }
-
+      list_attractions.each do |attraction|
+         markers << {
+          lat: attraction.latitude,
+          lng: attraction.longitude,
+          infoWindow: { content: render_to_string(partial: "shared/attraction_card", locals: { attraction: attraction }) }
+          }
       end
 
       follyfarm_marker = {
       icon: {url: "http://res.cloudinary.com/di7okux3q/image/upload/v1523814159/campground.svg"},
       lat: 51.8844963,
       lng: -1.8227667,
+      infoWindow: { content: render_to_string(partial: "shared/marker_details") }
       }
 
       markers << follyfarm_marker
 
-    end
+  end
 
 end

@@ -56,11 +56,9 @@ class PagesController < ApplicationController
      markers = []
      markers << {
         # icon: {url: "http://res.cloudinary.com/di7okux3q/image/upload/v1523814159/campground.svg"},
-
-
         lat: 51.8844963,
         lng: -1.8227667,
-        # infoWindow: { content: render_to_string(partial: "/shared/marker_details") }
+        infoWindow: { content: render_to_string(partial: "shared/marker_details") }
       }
       markers
     end
