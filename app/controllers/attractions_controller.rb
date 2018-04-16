@@ -3,6 +3,7 @@ class AttractionsController < ApplicationController
 
   def index
     @pagetitle = "Attractions"
+    @marker = create_markers()
   end
 
   def edit
@@ -44,7 +45,37 @@ class AttractionsController < ApplicationController
   private
 
   def attraction_params
-     params.require(:attraction).permit(:content, :subject, :image, :link)
+     params.require(:attraction).permit(:content, :subject, :image, :link, :address)
   end
+
+
+
+    def create_markers()
+
+     markers = []
+     markers << {
+        icon: {url: "http://res.cloudinary.com/di7okux3q/image/upload/v1523814159/campground.svg"},
+        lat: 51.8844963,
+        lng: -1.8227667,
+        # infoWindow: { content: render_to_string(partial: "/shared/marker_details") }
+      }
+      markers
+
+      list_attractions = Attraction.where.not(latitude: nil, longitude: nil)
+
+      list_attractions.map do |attraction|
+
+        original_attraction = attraction
+
+        {
+        lat: attraction.latitude,
+        lng: attraction.longitude,
+        infoWindow: { content: render_to_string(partial: "shared/attraction_card", locals: { attraction: original_attraction }) }
+        }
+
+      end
+
+
+    end
 
 end

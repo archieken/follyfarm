@@ -1,0 +1,48 @@
+
+<style>
+
+.show-map {
+  -webkit-transform: translateX(100vw)!important;
+  transform: translateX(100vw)!important;
+}
+
+
+.map-modal {
+  height: calc(100vh - 90px);
+  width: 99%;
+  position: fixed;
+  top: 80px;
+  right: 0px;
+  background-color: white;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  transition: .3s ease all;
+  z-index: 10;
+
+  display: flex !important;
+  justify-content: space-between;
+  padding: 10px;
+
+}
+
+  .map-modal:hover {
+  border: 2px;
+  }
+
+// GO BACK ICON
+
+  .x-icon {
+  height: 15px;
+  width: 15px;
+  }
+
+</style>
+
+
+
+  <div id="product" class="show-map map-modal">
+
+    <div id="map" style='width: 100%;' data-markers="<%= @marker.to_json %>"></div>
+
+  </div>

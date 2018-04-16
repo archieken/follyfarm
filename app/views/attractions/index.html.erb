@@ -3,10 +3,34 @@
 .container {
   background-color: #CEDBD1;
 }
+
+
+.info-button {
+  -webkit-transform:rotate(90deg);
+  position:fixed;
+  top:150px;
+  left: 0px;
+  background-color: #6A7577;
+  font-family: "Raleway";
+  margin-left: -40px;
+  color: white;
+  font-size: 1.3em;
+  padding: 10px;
+  padding-bottom: 20px;
+  border-top-right-radius: 15px !important;
+  border-top-left-radius: 15px !important;
+  border-color: #6A7577 !important;
+  z-index: 20;
+  opacity: 0.8;
+
+}
+
+
 </style>
 
-
 <div style="padding-top: 50px;"></div>
+
+
 
 <div class="attractions" style="background-color: #CEDBD1;">
 
@@ -14,24 +38,32 @@
 
     <% Attraction.all.each do |attraction| %>
     <div class="col-lg-6">
-        <div class="attraction-card">
-          <div class="attraction-card-content" style="background-color: white;">
-<img class="attraction-photo" src=<%= cl_image_path(attraction.image, cloud_name: 'di7okux3q')%>>
-            <div class="attraction-info" style="display:inline">
-              <h5 class="attraction-name"><%= attraction.subject %></h5>
-              <p class="attraction-card-para"><%= attraction.content %></p>
-              <a href=<%=attraction.link%>> <h6 class="attraction-card-link">more details...</h6></a>
-            </div>
-          </div>
-        </div>
-
-  </div>
+        <% @attraction = attraction %>
+        <%= render "shared/attraction_card" %>
+    </div>
   <% end %>
   </div>
 
 
 </div>
 
+<button class="info-button" onclick="toggleProduct()">Show Map</button>
+
+<%= render "shared/attractions_map" %>
 
 
-<%# render "shared/attractions_map" %>
+
+<script>
+
+  function toggleProduct() {
+  document.querySelector('#product').classList.toggle('show-map');
+
+  var button = document.querySelector('.info-button')
+
+  if (button.innerHTML == "Show Map") {
+    button.innerHTML = "Hide Map";}
+  else {
+    button.innerHTML = "Show Map";}
+  }
+
+</script>

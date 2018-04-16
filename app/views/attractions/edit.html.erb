@@ -2,6 +2,7 @@
         <%= f.input :image, label: false%>
         <%= f.input :subject%>
         <%= f.input :content%>
+        <%= f.input :address, :input_html => {id: "location-input"}%>
         <%= f.input :link%>
         <%= f.button :submit %>
       <% end %>
