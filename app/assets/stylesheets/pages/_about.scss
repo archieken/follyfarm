@@ -28,13 +28,6 @@
     border-top-right-radius: 0px !important;
 }
 
-// .main-sticky
-// {
-//     margin-left: 15vw;/* Same as the width of the sidenav */
-// }
-
-
-
 .about-sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -81,7 +74,7 @@
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 480px)
+@media screen and (max-width: 800px)
 
 {
 .about-sidenav { display: none; }
@@ -89,8 +82,7 @@
 }
 
 
-
-  .about-main h2 {
-      font-size: 2.75em;
-      font-weight: bold;
-  }
+.about-main h2 {
+  font-size: 2.75em;
+  font-weight: bold;
+}
