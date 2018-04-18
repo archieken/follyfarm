@@ -1,0 +1,29 @@
+
+/* The card */
+.route-card {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  position: relative !important;
+  z-index: 60;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+}
+
+.route-separator {
+  margin-top: 10px;
+  border: 1px solid #C3C3C3;
+}
+
+.route-name {
+  color: black;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+
+.os-button {
+  position: absolute !important;
+  bottom: 35px !important;
+  right: 50px !important;
+  display: none;
+  }
