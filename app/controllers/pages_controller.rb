@@ -43,10 +43,11 @@ class PagesController < ApplicationController
   end
 
 
-    def terms_edit
-
+  def terms_edit
     @terms = Term.last
+  end
 
+  def calendar
   end
 
   private

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :seasons
+  resources :meetings
   devise_for :users
   root to: 'pages#about'
 
@@ -17,6 +19,8 @@ Rails.application.routes.draw do
   get '/home', to: 'pages#about', as: 'home'
   get '/dofe', to: 'pages#dofe', as: 'dofe'
   get '/attractions/edit', to: 'attractions#index_edit', as: 'index_edit'
+
+  get '/calendar', to: 'pages#calendar', as: 'calendar'
   get '/terms', to: 'pages#terms', as: 'terms'
 
 

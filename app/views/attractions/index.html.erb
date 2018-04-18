@@ -1,43 +1,10 @@
-<style>
-
-.container {
-  background-color: #CEDBD1;
-}
-
-
-.info-button {
-  -webkit-transform:rotate(90deg);
-  position:fixed;
-  top:265px;
-  left: 0px;
-  background-color: #6A7577;
-  font-family: "Raleway";
-  margin-left: -40px;
-  color: white;
-  font-size: 1.3em;
-  padding: 10px;
-  padding-bottom: 20px;
-  border-top-right-radius: 15px !important;
-  border-top-left-radius: 15px !important;
-  border-color: #6A7577 !important;
-  z-index: 20;
-  opacity: 0.95;
-
-}
-
-
-</style>
-
-<div style="padding-top: 50px;"></div>
-
-
-
 <div class="attractions" style="background-color: #CEDBD1;">
 
   <div class="row">
+    <h5 class="thingtodo-header">Local Attractions</h5>
 
     <% Attraction.all.each do |attraction| %>
-    <div class="col-lg-6">
+    <div class="col-lg-6 attraction-shadow">
         <% @attraction = attraction %>
         <%= render "shared/attraction_card" %>
     </div>
@@ -47,11 +14,37 @@
 
 </div>
 
-<button class="info-button" onclick="toggleProduct()">Show Map</button>
+  <div class="walking">
+    <!-- <img class="hiker" src="http://res.cloudinary.com/di7okux3q/image/upload/v1524072062/hiker.png" alt="hiker"> -->
+    <h5 class="thingtodo-header">Walking Routes</h5>
+    <%= render "shared/route-card" %>
+  </div>
+
+<div class="cycling">
+
+  <!-- <img class="biker" src="http://res.cloudinary.com/di7okux3q/image/upload/v1524084058/bike.png" alt="biker"> -->
+
+  <h5 class="thingtodo-header">Cycle Routes</h5>
+
+<div class="route-card row">
+    <div class="col-lg-6"><iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.uk/maps/ms?msa=0&amp;msid=214654627766377602153.0004bdbe3d783afb5ad14&amp;ie=UTF8&amp;t=m&amp;ll=51.912285,-1.845658&amp;spn=0.04999,0.044036&amp;output=embed"></iframe></div>
+    <div class="col-lg-6">
+      <h1 class="route-name">Kineton and Guiting Power</h1>
+      <div class="route-separator"></div>
+      <p>This cycle is about an hour and takes you past 2 pubs, the Half Way House in Kineton and the Hollow Bottom in Guiting Power. It also goes through a ford but be careful it's very slippery!</p>
+    </div>
+    <a href="http://maps.google.co.uk/maps/ms?msa=0&amp;msid=214654627766377602153.0004bdbe3d783afb5ad14&amp;ie=UTF8&amp;t=m&amp;ll=51.912285,-1.845658&amp;spn=0.04999,0.044036&amp;source=embed" style="color:#0000FF;text-align:left"><div class="btn btn-success os-button" style="display: inline">View Map</div></a>
+    <div style="padding-bottom: 60px;"></div>
+
+</div>
+
+</div>
+
+
+
+<button class="attractions-info-button" onclick="toggleProduct()">Show Map</button>
 
 <%= render "shared/attractions_map" %>
-
-
 
 <script>
 
