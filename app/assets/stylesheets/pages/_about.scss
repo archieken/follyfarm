@@ -51,7 +51,6 @@
 .about-main {
     margin-left: 15vw;/* Same as the width of the sidenav */
     font-size: 1em; /* Increased text to enable scrolling */
-    padding: 20px;
     background-color: white;
 }
 
@@ -66,12 +65,11 @@
 }
 
 .card-map {
-  width: 100%;
+  width: calc(100%);
   height: 200px;
-  border-radius: 4px;
+  // border-radius: 4px;
   background-size: cover;
   background-position: center;
-  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 800px)
@@ -85,4 +83,54 @@
 .about-main h2 {
   font-size: 2.75em;
   font-weight: bold;
+}
+
+
+
+.about-section-content {
+  padding:20px;
+  -moz-box-shadow:    inset 0 0 10px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+  box-shadow:         inset 0 0 10px rgba(0,0,0,0.3);
+}
+
+// .about-section:nth-child(even){
+
+//   .about-section-content {
+//   // background-color: #E5F6FB !important;
+//   -moz-box-shadow:    inset 0 0 10px rgba(0,0,0,0.5);
+//   -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+//   box-shadow:         inset 0 0 10px rgba(0,0,0,0.5);}
+
+// }
+
+
+
+
+ .card-map {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+
+  }
+
+  .card-map > h2 {
+    padding-top:70px;
+    margin-top: 0px;
+
+  }
+
+  .about-hide {
+   opacity: 0;
+  }
+
+
+
+.about-banner-divider {
+
+  padding-top: 30px;
+  background-color: white;
+  -moz-box-shadow:    inset 0 0 10px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+  box-shadow:         inset 0 0 10px rgba(0,0,0,0.3);
 }

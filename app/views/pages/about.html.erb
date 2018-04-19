@@ -10,38 +10,6 @@
   <!-- for the anchor -->
 
 
-  <style>
-
-  .card-map {
-    color: white;
-    font-weight: bold;
-    text-align: center;
-
-  }
-
-  .card-map > h2 {
-    padding-top:70px;
-
-  }
-
-  .about-hide {
-   opacity: 0;
-  }
-
-
- /* .gmnoprint {
-    height: 100px !important;
-    overflow: hidden;
-  }*/
-
-  </style>
-
-
-
-
-
-
-
 
 <script>
 
@@ -151,22 +119,11 @@ google.maps.event.addDomListener(window, 'load', initialise);
 
 </script>
 
-
-
-
-
-
-
-
-
-  <div class="about-section" id="home">
-  </div>
-
   <div class="about-all">
 
     <div class="about-sidenav">
       <div class="head">
-      <a href="#home">more below</a>
+      <a href="#about">more below</a>
       <hr style="width: 90%; border-color: black;opacity: 0.4;margin-top: 0px;margin-bottom: 5px;">
       </div>
       <a href="#about">about us</a>
@@ -177,13 +134,19 @@ google.maps.event.addDomListener(window, 'load', initialise);
     </div>
 
     <div class="about-main">
+
+
+      <div class="about-banner-divider"></div>
+
+
       <div class="about-section" id="about">
        <div class="card-map" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45) ), url('<%=cl_image_path('vwbeetle', cloud_name: 'di7okux3q')%>')";'>
       <h2>about us</h2>
        </div>
+
+        <div class="about-section-content">
        <%= @about.content.html_safe %>
-        <!-- <p>The area is much loved for it's extensive walks and cycle routes. We are close to Cotswold Farm Park and Naunton Downs Golf Course as well as many historic villages and towns. South Cerney Water Parks which host a variety of water activities and the Cotswold Wildlife Park near Burford are only 30 minutes drive from us.</p>
-                <p>We offer simple facilities that include 4 showers, 7 toilets, dishwashing facilities, 10 amp electric hook-up points and a chemical WC disposal point.</p> -->
+       </div>
     </div>
 
 
@@ -191,7 +154,9 @@ google.maps.event.addDomListener(window, 'load', initialise);
         <div class="card-map" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45) ), url('<%=cl_image_path('IMG_0833.jpg', cloud_name: 'di7okux3q')%>');">
       <h2>news</h2>
        </div>
+      <div class="about-section-content">
       <%= @news.content.html_safe %>
+      </div>
     </div>
 
 
@@ -199,8 +164,11 @@ google.maps.event.addDomListener(window, 'load', initialise);
        <div class="card-map" style="background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0) ), url('<%=cl_image_path('IMG_0831.jpg', cloud_name: 'di7okux3q')%>')";'>
       <h2>prices</h2>
        </div>
+
+      <div class="about-section-content">
       <%= @prices.content.html_safe %>
       <%= render "shared/prices" %>
+      </div>
     </div>
 
      <div class="about-section" id="contact">
@@ -208,26 +176,27 @@ google.maps.event.addDomListener(window, 'load', initialise);
       <h2>contact info</h2>
        </div>
 
+      <div class="about-section-content">
       <%= @contact.content.html_safe %>
+      </div>
     </div>
 
 
-       <div class="about-section" id="find">
-      <div class="card-map" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 50%), url('https://maps.googleapis.com/maps/api/staticmap?center=51.887358,-1.819547&markers=color:purple%7C51.887358,-1.819547&zoom=12&size=2000x1500&key=AIzaSyCKxAu_Y-IhJUSTXAcMghvx_UDSBSGm2l8')";'>
-      <h2>how to find us</h2>
-     </div>
+      <div class="about-section" id="find">
+        <div class="card-map" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 50%), url('https://maps.googleapis.com/maps/api/staticmap?center=51.887358,-1.819547&markers=color:purple%7C51.887358,-1.819547&zoom=12&size=2000x1500&key=AIzaSyCKxAu_Y-IhJUSTXAcMghvx_UDSBSGm2l8')";'>
+        <h2>how to find us</h2>
+       </div>
+     <div class="about-section-content">
       <%= @findus.content.html_safe %>
-    </div>
 
-    <div style="padding-top: 50px;"></div>
+        <div style="padding-top: 50px;"></div>
 
+        <div id="map" style='width: 100%; height: calc(100vh - 70px);' data-markers="<%= @marker.to_json %>">
+        </div>
 
-    <div id="map" style='width: 100%; height: calc(100vh - 70px);' data-markers="<%= @marker.to_json %>">
-</div>
+      </div>
 
-    </div>
-
-  </div>
+      </div>
 
 
 
