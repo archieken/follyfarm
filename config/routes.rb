@@ -29,4 +29,10 @@ Rails.application.routes.draw do
 
   get '/terms/edit', to: 'pages#terms_edit', as: 'terms_edit'
 
+
+  get '/price-list', to: redirect('#prices')
+  get '/local-walks-cycle-routes', to: redirect('/attractions#walks')
+  get '/map', to: redirect('#find')
+  get '/photo-gallery', to: redirect('/images')
+
 end
