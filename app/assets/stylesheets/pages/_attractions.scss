@@ -25,17 +25,12 @@
   height: 190px;
 }
 
-.attraction-info {
-}
-
 .attraction-name {
   margin: 0px;
   margin-bottom: 10px;
   margin-top: 10px;
-  font-family: Raleway;
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  font-size: 1.1em;
+  font-weight: bold;
   color: #524F4C;
   opacity: 0.8;
 }
@@ -49,8 +44,8 @@
 
 .attraction-website-button {
     position: absolute;
-    bottom: 25px;
-    right: 30px;
+    bottom: 15px;
+    right: 20px;
     font-size: 16px;
 }
 
@@ -121,7 +116,7 @@
 }
 
 .walking {
- background-color: whitesmoke;
+ background-color: #FBF9ED;
  padding: 20px;
  position: relative !important;
  z-index: 50;
@@ -137,7 +132,22 @@
   padding-top: 30px;
   color: white;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
 
+// .about-section:nth-child(even){
+
+//   .about-section-content {
+//   // background-color: #E5F6FB !important;
+//   -moz-box-shadow:    inset 0 0 10px rgba(0,0,0,0.5);
+//   -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+//   box-shadow:         inset 0 0 10px rgba(0,0,0,0.5);}
+
+// }
+
+ .walking > .thingtodo-header{
+  color: #524F4C;
+  opacity: 0.8;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0);
 }
 
 
