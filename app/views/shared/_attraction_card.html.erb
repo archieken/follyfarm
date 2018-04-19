@@ -1,14 +1,16 @@
    <%  attraction = @attraction if @attraction.present? %>
 
-        <div class="attraction-card">
-         <div class="attraction-card-content" style="background-color: white;">
+        <div class="row attraction-card">
+          <div class="col-sm-4">
 <img class="attraction-photo" src=<%= cl_image_path(attraction.image, cloud_name: 'di7okux3q')%>>
-            <div class="attraction-info" style="display:inline">
+          </div>
+            <div class="col-sm-8">
+              <div class="attraction-contents">
               <h5 class="attraction-name"><%= attraction.subject %></h5>
               <p class="attraction-card-para"><%= attraction.content %></p>
-              <a href=<%= attraction.link %> target="_blank" class="attraction-website-button">
-                <div class="btn btn-primary btn-xs">visit site</div> </a>
+              <div style="padding-bottom: 40px;"></div>
+              </div>
             </div>
-          </div>
+            <a href=<%= attraction.link %> target="_blank" class="attraction-website-button">
+                <div class="btn btn-primary btn-xs">Visit Site</div> </a>
         </div>
-
