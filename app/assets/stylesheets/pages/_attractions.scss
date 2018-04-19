@@ -1,6 +1,6 @@
   .attractions {
     background-color: #CEDBD1;
-    padding: 40px;
+    padding: 20px;
   }
 
 
@@ -57,6 +57,10 @@
 // hides map for phones
 @media screen and (max-width: 800px) {
     .attractions-info-button {display:none !important; opacity: 0;}
+    .attractions {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 
