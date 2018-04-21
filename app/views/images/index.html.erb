@@ -6,15 +6,14 @@
 
 </style>
 
+
 <div class="container">
 
-<% Image.all.each do |image| %>
+<% Image.all.each_with_index do |image, index| %>
 
     <div class="responsive">
       <div class="gallery">
-        <a target="_blank" href= <%=cl_image_path(image.source, cloud_name: 'di7okux3q')%>>
-          <img src=<%=cl_image_path(image.source, cloud_name: 'di7okux3q', height: 200)%> width="300" height="200">
-        </a>
+          <img onclick="toggleCarousel(<%= index %>)" src=<%=cl_image_path(image.source, cloud_name: 'di7okux3q', height: 200)%> width="300" height="200">
         <div class="desc"><%= image.description%></div>
       </div>
     </div>
@@ -22,3 +21,30 @@
 <% end %>
 
 </div>
+
+
+<%= render "shared/carousel" %>
+
+<script>
+  function toggleCarousel(index) {
+  document.querySelector('#carousel-id').classList.toggle('show-carousel');
+
+  var items = document.querySelectorAll('.item');
+  var i;
+    for (i = 0; i < items.length; i++) {
+      items[i].classList.remove('active');
+      if (i == index) {items[i].classList.add('active');}
+    }
+
+  var indicators = document.querySelectorAll('.carousel-indicators li');
+
+  var k;
+  for (k = 0; k < items.length; k++) {
+      indicators[k].classList.remove('active');
+      if (k == index) { indicators[k].classList.add('active');}
+    }
+  }
+
+
+
+</script>
