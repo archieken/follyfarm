@@ -1,34 +1,25 @@
-<style>
-
-.container {
-  background-color: #CEDBD1;
-}
-</style>
-
-
+<div class="container" style="background-color: #CEDBD1;">
 
     <div class="responsive">
       <div class="gallery">
-        <a target="_blank" href= <%=cl_image_path('vwbeetle', cloud_name: 'di7okux3q')%>>
-          <img src=<%=cl_image_path('vwbeetle', cloud_name: 'di7okux3q')%> alt="Trolltunga Norway" width="300" height="200">
-        </a>
+          <img src=<%=cl_image_path('vwbeetle', cloud_name: 'di7okux3q')%> width="300" height="200">
         <div class="desc"><%= link_to "Upload new photo", new_image_path %></div>
       </div>
     </div>
 
 
 
-<% Image.all.each do |image| %>
+  <% Image.all.each do |image| %>
 
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href= <%=cl_image_path(image.source, cloud_name: 'di7okux3q')%>>
-          <img src=<%=cl_image_path(image.source, cloud_name: 'di7okux3q')%> alt="Trolltunga Norway" width="300" height="200">
-        </a>
-        <div class="desc"><%= image.description%>
-        <%= link_to "Delete", image_path(image), method: :delete %>
+      <div class="responsive">
+        <div class="gallery">
+            <img src=<%=cl_image_path(image.source, cloud_name: 'di7okux3q')%> alt="Trolltunga Norway" width="300" height="200">
+          <div class="desc"><%= image.description%>
+          <%= link_to "Delete", image_path(image), method: :delete %>
+          </div>
         </div>
       </div>
-    </div>
 
-<% end %>
+  <% end %>
+
+</div>
