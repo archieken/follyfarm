@@ -1,9 +1,3 @@
-<style>
-
-.container {
-  background-color: #CEDBD1;
-}
-</style>
 
 
 <div class="attractions" style="background-color: #CEDBD1;">
@@ -16,22 +10,11 @@
     </div>
 
     <% Attraction.all.each do |attraction| %>
-    <div class="col-lg-6">
-        <div class="attraction-card">
-          <div class="attraction-card-content" style="background-color: white;">
-               <img class="attraction-photo" src=<%=cl_image_path(attraction.image, cloud_name: 'di7okux3q')%> alt="Trolltunga Norway">
-            <div class="attraction-info" style="display:inline">
-              <h5 class="attraction-name"><%= attraction.subject %></h5>
-              <p class="attraction-card-para"><%= attraction.content %></p>
-              <a href=<%=attraction.link%>> <h6 class="attraction-card-link">more details...</h6></a>
-              <%= link_to "Edit", edit_attraction_path(attraction) %>
-              <%= link_to "Delete", attraction_path(attraction), method: :delete %>
-            </div>
-          </div>
-        </div>
-
-  </div>
-  <% end %>
+     <% @attraction = attraction %>
+    <div class="col-lg-6 attraction-shadow">
+      <%= render "shared/attraction_card_edit" %>
+    </div>
+    <% end %>
   </div>
 
 
