@@ -32,6 +32,7 @@ Rails.application.routes.draw do
 
   get '/price-list', to: redirect('#prices')
   get '/local-walks-cycle-routes', to: redirect('/attractions#walks')
+  get '/local-walks-cycle-routes/:all', to: redirect('/attractions#walks')
   get '/map', to: redirect('#find')
   get '/photo-gallery', to: redirect('/images')
   get '/contact-us', to: redirect('#contact')
