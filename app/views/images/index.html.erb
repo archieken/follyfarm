@@ -4,7 +4,7 @@
 
     <div class="responsive">
       <div class="gallery">
-          <img onclick="toggleCarousel(<%= index %>)" src=<%=cl_image_path(image.source, cloud_name: 'di7okux3q', height: 200)%> width="300" height="200">
+          <img onclick="toggleCarousel(<%= index %>)" src=<%=cl_image_path(image.source, cloud_name: 'di7okux3q', height: 200, crop: :scale, fetch_format: :auto)%> width="300" height="200">
         <div class="desc"><%= image.description%></div>
       </div>
     </div>
