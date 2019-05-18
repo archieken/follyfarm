@@ -10,15 +10,15 @@ gem 'rails', '5.1.5'
 gem 'redis'
 
 gem 'autoprefixer-rails'
-gem 'bootstrap-sass', '~> 3.3'
-gem 'font-awesome-sass', '~> 4.7'
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 
 gem 'cloudinary'
-gem 'carrierwave', '~> 1.2'
+gem 'carrierwave'
 gem 'ckeditor'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
@@ -26,10 +26,6 @@ gem 'omniauth-google-oauth2'
 gem 'geocoder'
 gem 'coffee-rails'
 gem 'gmaps4rails'
-
-
-gem "simple_calendar", "~> 2.0"
-
 
 source 'https://rails-assets.org' do
   gem "rails-assets-underscore"
