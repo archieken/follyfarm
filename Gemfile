@@ -19,7 +19,6 @@ gem 'webpacker'
 
 gem 'cloudinary'
 gem 'carrierwave'
-gem 'ckeditor'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
 
