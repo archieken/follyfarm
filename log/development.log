@@ -49510,3 +49510,198 @@ Processing by PagesController#about as HTML
 Completed 200 OK in 4849ms (Views: 4841.1ms | ActiveRecord: 1.9ms | Allocations: 68741)
 
 
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/archie/code/archieken/follyfarm/config/environment.rb:5)
+Started GET "/" for ::1 at 2019-09-29 15:06:51 +0200
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#about as HTML
+  [1m[36mAbout Load (0.8ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" ORDER BY "abouts"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mNews Load (1.2ms)[0m  [1m[34mSELECT "news".* FROM "news" ORDER BY "news"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPrice Load (0.2ms)[0m  [1m[34mSELECT "prices".* FROM "prices" ORDER BY "prices"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mFindu Load (0.3ms)[0m  [1m[34mSELECT "findus".* FROM "findus" ORDER BY "findus"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mContactinfo Load (0.3ms)[0m  [1m[34mSELECT "contactinfos".* FROM "contactinfos" ORDER BY "contactinfos"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered shared/_marker_details.html.erb (Duration: 2.0ms | Allocations: 361)
+  Rendering pages/about.html.erb within layouts/application
+  Rendered shared/_prices.html.erb (Duration: 0.4ms | Allocations: 199)
+  Rendered pages/about.html.erb within layouts/application (Duration: 17.0ms | Allocations: 5824)
+  Rendered shared/_navbar.html.erb (Duration: 2.8ms | Allocations: 1012)
+  Rendered shared/_home-banner.html.erb (Duration: 1.2ms | Allocations: 331)
+  Rendered shared/_footer.html.erb (Duration: 3.8ms | Allocations: 409)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 8919ms (Views: 8840.7ms | ActiveRecord: 24.4ms | Allocations: 1615968)
+
+
+Started GET "/dofe" for ::1 at 2019-09-29 15:07:03 +0200
+Processing by PagesController#dofe as HTML
+  Rendering pages/dofe.html.erb within layouts/application
+  Rendered pages/dofe.html.erb within layouts/application (Duration: 0.4ms | Allocations: 118)
+  Rendered shared/_navbar.html.erb (Duration: 2.4ms | Allocations: 616)
+  Rendered shared/_banner.html.erb (Duration: 0.4ms | Allocations: 220)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 260)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4931ms (Views: 4929.9ms | ActiveRecord: 0.0ms | Allocations: 67763)
+
+
+Started GET "/images" for ::1 at 2019-09-29 15:08:08 +0200
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (1.0ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  [1m[36mCACHE Image Load (0.0ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  [1m[36mCACHE Image Load (0.0ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  Rendered shared/_carousel.html.erb (Duration: 2.3ms | Allocations: 2542)
+  Rendered images/index.html.erb within layouts/application (Duration: 32.5ms | Allocations: 12107)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 615)
+  Rendered shared/_banner.html.erb (Duration: 0.4ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 256)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4778ms (Views: 4772.9ms | ActiveRecord: 4.5ms | Allocations: 79966)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/archie/code/archieken/follyfarm/config/environment.rb:5)
+Started GET "/images" for ::1 at 2019-09-29 15:12:55 +0200
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  [1m[36mCACHE Image Load (0.0ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  [1m[36mCACHE Image Load (0.0ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  Rendered shared/_carousel.html.erb (Duration: 8.2ms | Allocations: 2542)
+  Rendered images/index.html.erb within layouts/application (Duration: 77.2ms | Allocations: 16614)
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 1011)
+  Rendered shared/_banner.html.erb (Duration: 0.4ms | Allocations: 396)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 409)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 8741ms (Views: 8734.9ms | ActiveRecord: 4.6ms | Allocations: 1771202)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/archie/code/archieken/follyfarm/config/environment.rb:5)
+Started GET "/images" for ::1 at 2019-09-29 15:15:51 +0200
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  [1m[36mCACHE Image Load (0.0ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  [1m[36mCACHE Image Load (0.0ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  Rendered shared/_carousel.html.erb (Duration: 9.1ms | Allocations: 2542)
+  Rendered images/index.html.erb within layouts/application (Duration: 91.1ms | Allocations: 16614)
+  Rendered shared/_navbar.html.erb (Duration: 1.5ms | Allocations: 1011)
+  Rendered shared/_banner.html.erb (Duration: 0.6ms | Allocations: 396)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 409)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 11036ms (Views: 11025.7ms | ActiveRecord: 6.3ms | Allocations: 1419740)
+
+
+Started GET "/" for ::1 at 2019-09-29 15:16:25 +0200
+Processing by PagesController#about as HTML
+  [1m[36mAbout Load (0.5ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" ORDER BY "abouts"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mNews Load (1.1ms)[0m  [1m[34mSELECT "news".* FROM "news" ORDER BY "news"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPrice Load (0.3ms)[0m  [1m[34mSELECT "prices".* FROM "prices" ORDER BY "prices"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mFindu Load (0.3ms)[0m  [1m[34mSELECT "findus".* FROM "findus" ORDER BY "findus"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mContactinfo Load (0.3ms)[0m  [1m[34mSELECT "contactinfos".* FROM "contactinfos" ORDER BY "contactinfos"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered shared/_marker_details.html.erb (Duration: 0.3ms | Allocations: 141)
+  Rendering pages/about.html.erb within layouts/application
+  Rendered shared/_prices.html.erb (Duration: 1.1ms | Allocations: 199)
+  Rendered pages/about.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1860)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 615)
+  Rendered shared/_home-banner.html.erb (Duration: 0.4ms | Allocations: 331)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 260)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5802ms (Views: 5717.1ms | ActiveRecord: 20.5ms | Allocations: 90352)
+
+
+Started GET "/attractions" for ::1 at 2019-09-29 15:16:58 +0200
+Processing by AttractionsController#index as HTML
+DEPRECATION WARNING: NOT conditions will no longer behave as NOR in Rails 6.1. To continue using NOR conditions, NOT each conditions manually (`.where.not(:latitude => ...).where.not(:longitude => ...)`). (called from create_markers at /home/archie/code/archieken/follyfarm/app/controllers/attractions_controller.rb:57)
+  [1m[36mAttraction Load (1.3ms)[0m  [1m[34mSELECT "attractions".* FROM "attractions" WHERE "attractions"."latitude" IS NOT NULL AND "attractions"."longitude" IS NOT NULL[0m
+  Rendered shared/_attraction_card.html.erb (Duration: 0.7ms | Allocations: 458)
+  Rendered shared/_attraction_card.html.erb (Duration: 1.0ms | Allocations: 284)
+  Rendered shared/_marker_details.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendering attractions/index.html.erb within layouts/application
+  [1m[36mAttraction Load (0.3ms)[0m  [1m[34mSELECT "attractions".* FROM "attractions"[0m
+  Rendered shared/_attraction_card.html.erb (Duration: 0.6ms | Allocations: 443)
+  Rendered shared/_attraction_card.html.erb (Duration: 0.2ms | Allocations: 283)
+  Rendered shared/_attraction_card.html.erb (Duration: 0.3ms | Allocations: 283)
+  Rendered shared/_attraction_card.html.erb (Duration: 0.2ms | Allocations: 283)
+  Rendered shared/_attraction_card.html.erb (Duration: 0.2ms | Allocations: 311)
+  Rendered shared/_attraction_card.html.erb (Duration: 0.2ms | Allocations: 283)
+  Rendered shared/_attraction_card.html.erb (Duration: 0.2ms | Allocations: 283)
+  Rendered shared/_route-card.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered shared/_attractions_map.html.erb (Duration: 1.5ms | Allocations: 514)
+  Rendered attractions/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 4341)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 615)
+  Rendered shared/_banner.html.erb (Duration: 0.1ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 256)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5856ms (Views: 5824.5ms | ActiveRecord: 4.5ms | Allocations: 84888)
+
+
