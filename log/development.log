@@ -49210,3 +49210,303 @@ the expected changes won't be reflected in that stale Module object.
 
 Please, check the "Autoloading and Reloading Constants" guide for solutions.
  (called from <top (required)> at /home/archie/code/archieken/follyfarm/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/archie/code/archieken/follyfarm/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/archie/code/archieken/follyfarm/config/environment.rb:5)
+Started GET "/" for ::1 at 2019-09-29 14:54:19 +0200
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#about as HTML
+  [1m[36mAbout Load (0.5ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" ORDER BY "abouts"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mNews Load (0.3ms)[0m  [1m[34mSELECT "news".* FROM "news" ORDER BY "news"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPrice Load (0.3ms)[0m  [1m[34mSELECT "prices".* FROM "prices" ORDER BY "prices"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mFindu Load (1.2ms)[0m  [1m[34mSELECT "findus".* FROM "findus" ORDER BY "findus"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mContactinfo Load (0.3ms)[0m  [1m[34mSELECT "contactinfos".* FROM "contactinfos" ORDER BY "contactinfos"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered shared/_marker_details.html.erb (Duration: 1.5ms | Allocations: 361)
+  Rendering pages/about.html.erb within layouts/application
+  Rendered shared/_prices.html.erb (Duration: 0.3ms | Allocations: 199)
+  Rendered pages/about.html.erb within layouts/application (Duration: 30.2ms | Allocations: 5824)
+  Rendered shared/_navbar.html.erb (Duration: 1.8ms | Allocations: 1234)
+  Rendered shared/_home-banner.html.erb (Duration: 0.6ms | Allocations: 331)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 409)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6267ms (Views: 6170.1ms | ActiveRecord: 24.9ms | Allocations: 1474124)
+
+
+Started GET "/dofe" for ::1 at 2019-09-29 14:54:28 +0200
+Processing by PagesController#dofe as HTML
+  Rendering pages/dofe.html.erb within layouts/application
+  Rendered pages/dofe.html.erb within layouts/application (Duration: 0.3ms | Allocations: 118)
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 833)
+  Rendered shared/_banner.html.erb (Duration: 0.4ms | Allocations: 220)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 260)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4633ms (Views: 4631.2ms | ActiveRecord: 0.0ms | Allocations: 67414)
+
+
+Started GET "/dofe" for ::1 at 2019-09-29 14:55:30 +0200
+Processing by PagesController#dofe as HTML
+  Rendering pages/dofe.html.erb within layouts/application
+  Rendered pages/dofe.html.erb within layouts/application (Duration: 0.3ms | Allocations: 111)
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 1186)
+  Rendered shared/_banner.html.erb (Duration: 0.3ms | Allocations: 212)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 402)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Compiling…
+Started GET "/dofe" for ::1 at 2019-09-29 14:55:34 +0200
+Processing by PagesController#dofe as HTML
+  Rendering pages/dofe.html.erb within layouts/application
+  Rendered pages/dofe.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 832)
+  Rendered shared/_banner.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 255)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5253ms (Views: 5252.2ms | ActiveRecord: 0.0ms | Allocations: 136047)
+
+
+[Webpacker] Compilation failed:
+
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5418ms (Views: 5418.1ms | ActiveRecord: 0.0ms | Allocations: 67508)
+
+
+Started GET "/" for ::1 at 2019-09-29 14:55:48 +0200
+Processing by PagesController#about as HTML
+  [1m[36mAbout Load (0.5ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" ORDER BY "abouts"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mNews Load (0.4ms)[0m  [1m[34mSELECT "news".* FROM "news" ORDER BY "news"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPrice Load (0.4ms)[0m  [1m[34mSELECT "prices".* FROM "prices" ORDER BY "prices"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mFindu Load (0.3ms)[0m  [1m[34mSELECT "findus".* FROM "findus" ORDER BY "findus"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mContactinfo Load (0.5ms)[0m  [1m[34mSELECT "contactinfos".* FROM "contactinfos" ORDER BY "contactinfos"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered shared/_marker_details.html.erb (Duration: 0.3ms | Allocations: 132)
+  Rendering pages/about.html.erb within layouts/application
+  Rendered shared/_prices.html.erb (Duration: 0.3ms | Allocations: 193)
+  Rendered pages/about.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1830)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 832)
+  Rendered shared/_home-banner.html.erb (Duration: 1.4ms | Allocations: 332)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 260)
+[Webpacker] Compiling…
+Started GET "/" for ::1 at 2019-09-29 14:55:51 +0200
+Processing by PagesController#about as HTML
+  [1m[36mAbout Load (0.4ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" ORDER BY "abouts"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mNews Load (0.4ms)[0m  [1m[34mSELECT "news".* FROM "news" ORDER BY "news"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPrice Load (1.9ms)[0m  [1m[34mSELECT "prices".* FROM "prices" ORDER BY "prices"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mFindu Load (0.3ms)[0m  [1m[34mSELECT "findus".* FROM "findus" ORDER BY "findus"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mContactinfo Load (0.3ms)[0m  [1m[34mSELECT "contactinfos".* FROM "contactinfos" ORDER BY "contactinfos"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered shared/_marker_details.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendering pages/about.html.erb within layouts/application
+  Rendered shared/_prices.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered pages/about.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1053)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 831)
+  Rendered shared/_home-banner.html.erb (Duration: 0.2ms | Allocations: 209)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 255)
+[Webpacker] Compilation failed:
+
+[Webpacker] Compiling…
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5507ms (Views: 5493.9ms | ActiveRecord: 2.3ms | Allocations: 138135)
+
+
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5567ms (Views: 5554.2ms | ActiveRecord: 3.3ms | Allocations: 72885)
+
+
+Started GET "/" for ::1 at 2019-09-29 14:58:12 +0200
+Processing by PagesController#about as HTML
+  [1m[36mAbout Load (0.3ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" ORDER BY "abouts"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mNews Load (1.1ms)[0m  [1m[34mSELECT "news".* FROM "news" ORDER BY "news"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPrice Load (0.2ms)[0m  [1m[34mSELECT "prices".* FROM "prices" ORDER BY "prices"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mFindu Load (0.2ms)[0m  [1m[34mSELECT "findus".* FROM "findus" ORDER BY "findus"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mContactinfo Load (0.2ms)[0m  [1m[34mSELECT "contactinfos".* FROM "contactinfos" ORDER BY "contactinfos"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered shared/_marker_details.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendering pages/about.html.erb within layouts/application
+  Rendered shared/_prices.html.erb (Duration: 0.3ms | Allocations: 193)
+  Rendered pages/about.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1830)
+  Rendered shared/_navbar.html.erb (Duration: 2.4ms | Allocations: 967)
+  Rendered shared/_home-banner.html.erb (Duration: 0.5ms | Allocations: 327)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 402)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Compiling…
+Started GET "/dofe" for ::1 at 2019-09-29 14:58:15 +0200
+Processing by PagesController#dofe as HTML
+  Rendering pages/dofe.html.erb within layouts/application
+  Rendered pages/dofe.html.erb within layouts/application (Duration: 0.4ms | Allocations: 109)
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 616)
+  Rendered shared/_banner.html.erb (Duration: 0.6ms | Allocations: 212)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 260)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5624ms (Views: 5616.4ms | ActiveRecord: 2.0ms | Allocations: 137505)
+
+
+[Webpacker] Compilation failed:
+
+[Webpacker] Compiling…
+Started GET "/dofe" for ::1 at 2019-09-29 14:58:19 +0200
+Processing by PagesController#dofe as HTML
+  Rendering pages/dofe.html.erb within layouts/application
+  Rendered pages/dofe.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 615)
+  Rendered shared/_banner.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 255)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6052ms (Views: 6050.7ms | ActiveRecord: 0.0ms | Allocations: 132651)
+
+
+[Webpacker] Compilation failed:
+
+[Webpacker] Compiling…
+Started GET "/dofe" for ::1 at 2019-09-29 14:58:22 +0200
+Processing by PagesController#dofe as HTML
+  Rendering pages/dofe.html.erb within layouts/application
+  Rendered pages/dofe.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 611)
+  Rendered shared/_banner.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 255)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5677ms (Views: 5676.7ms | ActiveRecord: 0.0ms | Allocations: 131964)
+
+
+[Webpacker] Compilation failed:
+
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5778ms (Views: 5777.4ms | ActiveRecord: 0.0ms | Allocations: 67278)
+
+
+Started GET "/dofe" for ::1 at 2019-09-29 14:58:32 +0200
+Processing by PagesController#dofe as HTML
+  Rendering pages/dofe.html.erb within layouts/application
+  Rendered pages/dofe.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_navbar.html.erb (Duration: 2.4ms | Allocations: 611)
+  Rendered shared/_banner.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 255)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5428ms (Views: 5427.3ms | ActiveRecord: 0.0ms | Allocations: 66332)
+
+
+Started GET "/" for ::1 at 2019-09-29 14:59:29 +0200
+Processing by PagesController#about as HTML
+  [1m[36mAbout Load (0.4ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" ORDER BY "abouts"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mNews Load (0.3ms)[0m  [1m[34mSELECT "news".* FROM "news" ORDER BY "news"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPrice Load (0.4ms)[0m  [1m[34mSELECT "prices".* FROM "prices" ORDER BY "prices"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mFindu Load (0.8ms)[0m  [1m[34mSELECT "findus".* FROM "findus" ORDER BY "findus"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mContactinfo Load (0.2ms)[0m  [1m[34mSELECT "contactinfos".* FROM "contactinfos" ORDER BY "contactinfos"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered shared/_marker_details.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendering pages/about.html.erb within layouts/application
+  Rendered shared/_prices.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered pages/about.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1053)
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 610)
+  Rendered shared/_home-banner.html.erb (Duration: 0.5ms | Allocations: 209)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 255)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3942ms (Views: 3935.5ms | ActiveRecord: 2.1ms | Allocations: 68741)
+
+
+Started GET "/" for ::1 at 2019-09-29 14:59:49 +0200
+Processing by PagesController#about as HTML
+  [1m[36mAbout Load (0.8ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" ORDER BY "abouts"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mNews Load (0.3ms)[0m  [1m[34mSELECT "news".* FROM "news" ORDER BY "news"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPrice Load (0.5ms)[0m  [1m[34mSELECT "prices".* FROM "prices" ORDER BY "prices"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mFindu Load (0.3ms)[0m  [1m[34mSELECT "findus".* FROM "findus" ORDER BY "findus"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mContactinfo Load (0.2ms)[0m  [1m[34mSELECT "contactinfos".* FROM "contactinfos" ORDER BY "contactinfos"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered shared/_marker_details.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendering pages/about.html.erb within layouts/application
+  Rendered shared/_prices.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1053)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 610)
+  Rendered shared/_home-banner.html.erb (Duration: 0.4ms | Allocations: 209)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 255)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3913ms (Views: 3905.2ms | ActiveRecord: 2.1ms | Allocations: 68736)
+
+
+Started GET "/" for ::1 at 2019-09-29 15:00:01 +0200
+Processing by PagesController#about as HTML
+  [1m[36mAbout Load (0.3ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" ORDER BY "abouts"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mNews Load (0.3ms)[0m  [1m[34mSELECT "news".* FROM "news" ORDER BY "news"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPrice Load (0.3ms)[0m  [1m[34mSELECT "prices".* FROM "prices" ORDER BY "prices"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mFindu Load (0.7ms)[0m  [1m[34mSELECT "findus".* FROM "findus" ORDER BY "findus"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mContactinfo Load (0.3ms)[0m  [1m[34mSELECT "contactinfos".* FROM "contactinfos" ORDER BY "contactinfos"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered shared/_marker_details.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendering pages/about.html.erb within layouts/application
+  Rendered shared/_prices.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered pages/about.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1053)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 610)
+  Rendered shared/_home-banner.html.erb (Duration: 0.3ms | Allocations: 209)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 255)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4849ms (Views: 4841.1ms | ActiveRecord: 1.9ms | Allocations: 68741)
+
+
