@@ -1,6 +1,6 @@
 {
   "name": "follyfarm",
-  "version": "1.0.0",
+  "version": "1.12.3",
   "main": "index.js",
   "repository": "git@github.com:archieken/follyfarm.git",
   "author": "archie kenwright <kenwright.aw@googlemail.com>",
