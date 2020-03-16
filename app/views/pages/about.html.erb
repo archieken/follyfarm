@@ -22,11 +22,6 @@
        <div class="card-map" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45) ), url('<%=cl_image_path('vwbeetle', height: 380, quality: 25, cloud_name: 'di7okux3q', crop: :scale, fetch_format: :auto)%>')";'>
       <h2>about us</h2>
        </div>
-      
-      <p><b>Folly Farm will remain open for now. We are taking the advice of medical professionals and the government 
-     seriously and alongside this believe we have a duty of care to our campers, our local community and our team.
-     If you have any questions please do not hesitate to get in touch.</b></p>
-
         <div class="about-section-content">
        <%= @about.content.html_safe %>
        </div>
@@ -38,7 +33,9 @@
       <h2>news</h2>
        </div>
       <div class="about-section-content">
-      <%= @news.content.html_safe %>
+            <p>Folly Farm will remain open for now. We are taking the advice of medical professionals and the government 
+     seriously and alongside this believe we have a duty of care to our campers, our local community and our team.
+     If you have any questions please do not hesitate to get in touch.</p>
       </div>
     </div>
 
